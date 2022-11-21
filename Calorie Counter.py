@@ -11,7 +11,7 @@ class Goals:
     maintain = [14, 15]
 
     def getUserWeight(self):
-        self.weight = int(input('Respectfully, Whats your current weight - Please Enter in "lbs"? '))
+        self.weight = int(input('Whats your current weight - Please Enter in "lbs"? '))
 
 
 #Here is the Formula found to caluclate proper caloric intake for goals!
@@ -21,16 +21,19 @@ class Goals:
         lose_cals = list(map(lambda x: self.weight * x, self.lose_fat))
         print("The following are the calories you need to stay in between to reach your goal - Lets begin Tracking your Caloric Intake!")
         print(lose_cals)
+        print(low_cal)
 
     def maintainWeight(self):
         maintain_cals = list(map(lambda x: self.weight * x,self.maintain))
         print("The following are the calories you need to stay in between to reach your goal - Lets begin Tracking your Caloric Intake!")
         print(maintain_cals)
+        print(healthy_alt)
 
     def gainMuscle(self):
         strong_cals = list(map(lambda x: self.weight * x, self.gain_muscle))
         print("The following are the calories you need to stay in between to reach your goal - Lets begin Tracking your Caloric Intake!")
         print(strong_cals)
+        print(high_pro)
 
 class User:
 
@@ -58,7 +61,7 @@ class User:
     '''
 
     def setRun(self):
-        answer = input("Do you need further assistance? ")
+        answer = input("Would you like to enter another weight? ")
         if answer in self.yes:
             self.run = True
         else:
