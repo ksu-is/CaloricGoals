@@ -12,7 +12,10 @@ class Goals:
 
     def getUserWeight(self):
         self.weight = int(input('Whats your current weight - Please Enter in "lbs"? '))
-
+#Here are the food suggestions for the following inputs
+    low_cal =
+    healthy_alt =
+    high_pro = 
 
 #Here is the Formula found to caluclate proper caloric intake for goals!
 
