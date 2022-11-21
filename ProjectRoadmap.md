@@ -1,0 +1,11 @@
+- [x] create repository for project DONE
+- [x] add initial readme.md document DONE
+- [x] edit readme.md document for formatting/clarification DONE
+- [x] Create initial question that asks for current weight DONE
+- [x] Create second question: Do you want to maintain weight, gain weight, or lose weight DONE
+  - [ ] An input of 0 is required for loosing weight
+  - [ ] An input of 1 is required for maintaining weight
+  - [ ] An input of 2 is required for gaining weight
+- [ ] Add suggesting foods that help reach goals
+- [ ] Ask if the user would like to input another weight
+- [ ] Close application DONE
