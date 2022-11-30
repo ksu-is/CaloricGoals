@@ -13,9 +13,9 @@ class Goals:
     def getUserWeight(self):
         self.weight = int(input('Whats your current weight - Please Enter in "lbs"? '))
 #Here are the food suggestions for the following inputs
-    low_cal =
-    healthy_alt =
-    high_pro = 
+    low_cal = []
+    healthy_alt = []
+    high_pro = []
 
 #Here is the Formula found to caluclate proper caloric intake for goals!
 
@@ -24,19 +24,19 @@ class Goals:
         lose_cals = list(map(lambda x: self.weight * x, self.lose_fat))
         print("The following are the calories you need to stay in between to reach your goal - Lets begin Tracking your Caloric Intake!")
         print(lose_cals)
-        print(low_cal)
+        print(random.choice(low_cal))
 
     def maintainWeight(self):
         maintain_cals = list(map(lambda x: self.weight * x,self.maintain))
         print("The following are the calories you need to stay in between to reach your goal - Lets begin Tracking your Caloric Intake!")
         print(maintain_cals)
-        print(healthy_alt)
+        print(random.choice(healthy_alt))
 
     def gainMuscle(self):
         strong_cals = list(map(lambda x: self.weight * x, self.gain_muscle))
         print("The following are the calories you need to stay in between to reach your goal - Lets begin Tracking your Caloric Intake!")
         print(strong_cals)
-        print(high_pro)
+        print(random.choice(high_pro))
 
 class User:
 
@@ -96,6 +96,6 @@ while u1.run:
     u1.setRun()
 
 print("Good luck on tracking your Calories towards your goal!")
-print("Always Remember to stay focused and never get discouraged :)")
+print("Always Remember to stay focused and never get discouraged!")
 
 
