@@ -74,16 +74,28 @@ class User:
         return self.run
 
     def sortCalc(self, obj):
+        #Here are the food suggestions for the following inputs
+        low_cal = []
+        healthy_alt = []
+        high_pro = []
+        
+        import random
+        
         print(self.goal)
         answer = int(input("Enter your Number here---> "))
         print('\n')
         if answer == 0:
             obj.loseWeight()
+            print("Here is a healthy option to help reach your goals: "
+             print(random.choice(high_pro)
         elif answer == 1:
             obj.maintainWeight()
+            print("Here is a healthy option to help reach your goals: "
+            print(random.choice(high_pro)
         else:
             obj.gainMuscle()
-
+            print("Here is a healthy option to help reach your goals: "
+            print(random.choice(high_pro)
 c1 = Goals()
 u1 = User()
 
